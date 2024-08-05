@@ -53,36 +53,6 @@ que ayuda en la depuración de problemas.
 - WebDriver
 - IDE (Entorno de Desarrollo Integrado)
 
-### Ejemplo Básico
-
-Ejemplo básico de cómo usar Selenide para realizar una búsqueda en Google:
-
-```java
-public class BuscarStep {
-    private GooglePage googlePage;
-
-    @BeforeAll
-    public static void setUpAll() {
-        Configuration.browserSize = "1280x800";
-        Configuration.browser = "chrome";
-        SelenideLogger.addListener("allure", new AllureSelenide());
-    }
-
-    @BeforeEach
-    public void setUp() {
-        Configuration.browserCapabilities = new ChromeOptions().addArguments("--remote-allow-origins=*");
-        googlePage = open(Prod.urlProduccion(), GooglePage.class);
-    }
-
-    @Test
-    @Description("Primera prueba exitosa usando las funcionalidades completas de Selenide")
-    public void search() throws InterruptedException {
-        googlePage.searchFor("Selenium WebDriver busqueda uno");
-        WebDriverRunner.closeWebDriver();
-    }
-}  
-```
-
 ## Comandos para Ejecutar Pruebas
 
 ### Ejecutar Todos los Tests
