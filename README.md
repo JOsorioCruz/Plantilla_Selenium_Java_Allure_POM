@@ -39,7 +39,6 @@ que ayuda en la depuración de problemas.
 │               └── BuscarStep.java
 ├── target
 ├── .gitignore
-├── browsers.json
 ├── mvnw
 ├── mvnw.cmd
 ├── pom.xml
@@ -54,6 +53,8 @@ que ayuda en la depuración de problemas.
 - IDE (Entorno de Desarrollo Integrado)
 
 ## Comandos para Ejecutar Pruebas
+
+**Nota**: Se deben ejecutar las pruebas desde en IDE en la clase BuscarStep.java para que automaticamente se genere la carpeta allure-results
 
 ### Ejecutar Todos los Tests
 
@@ -83,5 +84,3 @@ Abrir reporte de allure
 ```bash
 allure open
 ```
-
-**Nota**: Al realizar las pruebas automaticamente se genera la carpeta allure-results
