@@ -1,4 +1,3 @@
-![Selenium Template](ruta/a/tu/imagen/selenium_template.png)
 # Selenium (Selenide)
 
 La siguiente plantilla está realizada con Selenide, Java, POM y allure.
