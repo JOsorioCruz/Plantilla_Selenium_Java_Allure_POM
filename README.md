@@ -55,6 +55,8 @@ que ayuda en la depuración de problemas.
 
 ## Comandos para Ejecutar Pruebas
 
+**Nota**: Se deben ejecutar las pruebas desde la clase BuscarStep.java para que automaticamente se genere la carpeta allure-results
+
 ### Ejecutar Todos los Tests
 
 Para ejecutar todos los tests de un proyecto Maven desde la consola, utiliza el siguiente comando:
@@ -83,5 +85,3 @@ Abrir reporte de allure
 ```bash
 allure open
 ```
-
-**Nota**: Al realizar las pruebas automaticamente se genera la carpeta allure-results
