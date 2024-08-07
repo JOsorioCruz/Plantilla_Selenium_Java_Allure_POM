@@ -46,42 +46,38 @@ que ayuda en la depuración de problemas.
 └── README.md
 ```
 ## Pre-requisitos
-- Java Development Kit (JDK)
-- Apache Maven
-- Selenide
-- Allure Framework
-- WebDriver
-- IDE (Entorno de Desarrollo Integrado)
+- Java Development Kit (JDK): [Java Development Kit (JDK)](https://docs.oracle.com/javase/8/docs/)
+- Apache Maven: [Apache Maven](https://maven.apache.org/guides/index.html)
+- Selenide: [Selenide](https://selenide.org/documentation.html)
+- Allure Framework: [Allure Framework](https://docs.qameta.io/allure/)
+- WebDriver: [WebDriver](https://www.selenium.dev/documentation/en/webdriver/)
+- IDE (Entorno de Desarrollo Integrado): [IDE (Entorno de Desarrollo Integrado)](https://www.jetbrains.com/idea/documentation/)
 
-## Comandos para Ejecutar Pruebas
+## Comandos de Ejecución
 
-### Ejecutar Todos los Tests
+Para ejecutar las pruebas y generar los reportes, utiliza los siguientes comandos en la consola:
 
-Para ejecutar todos los tests de un proyecto Maven desde la consola, utiliza el siguiente comando:
-
+- Ejecutar las Pruebas
 ```bash
-mvn test -Dtest=BuscarStep
+mvn clean test
 ```
 
-Comando para ejecutar un test en especifico
+- Generar Reporte de Allure
 ```bash
-mvn -Dtest=BuscarStep#search test
+mvn allure:report
 ```
 
-### Generar y Abrir el Reporte de Allure
-
-Para generar y abrir el reporte de Allure después de ejecutar las pruebas, utiliza el siguiente comando:
-
-`allure generate allure-results --clean`: se utiliza para generar un reporte de Allure a partir
-  de los resultados de las pruebas almacenados en un directorio.
-
+- Servir el Reporte de Allure
 ```bash
-allure generate allure-results --clean
+mvn allure:serve
 ```
 
-Abrir reporte de allure
+- Abrir reporte de allure
 ```bash
 allure open
 ```
+#  📫 Contacto
 
-**Nota**: Al realizar las pruebas automaticamente se genera la carpeta allure-results
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:osoriocruzjairo@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jairo-osorio-c-8461061b3/)
+Para más información o consultas, puedes contactarme a través de mi correo electrónico: [osoriocruzjairo@gmail.com](mailto:osoriocruzjairo@gmail.com) o LinkedIn: [Jairo Osorio Cruz](https://www.linkedin.com/in/jairo-osorio-c-8461061b3/).

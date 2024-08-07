@@ -16,7 +16,7 @@ import pages.GooglePage;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class BuscarStep {
+public class BuscarTest {
     private GooglePage googlePage;
 
     @BeforeAll
